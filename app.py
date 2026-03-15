@@ -8,7 +8,7 @@ CORS(app)
 
 # API KEY
 
-client = Groq(api_key=os.environ.get("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"))
+client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 @app.route('/quiz', methods=['POST'])
 def generate_quiz():
